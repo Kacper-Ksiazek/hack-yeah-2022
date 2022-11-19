@@ -13,8 +13,23 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "isolatedModules": false
+    }
+  },
+  "include": [
+    "next-env.d.ts", //
+    "**/*.ts",
+    "**/*.tsx",
+    "./jest-setup.ts"
+  ],
   "exclude": ["node_modules"]
 }
