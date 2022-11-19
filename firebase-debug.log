@@ -1,0 +1,28 @@
+[debug] [2022-11-19T13:08:52.467Z] ----------------------------------------------------------------------
+[debug] [2022-11-19T13:08:52.469Z] Command:       /Users/jakub/.nvm/versions/node/v16.16.0/bin/node /Users/jakub/.nvm/versions/node/v16.16.0/bin/firebase deploy
+[debug] [2022-11-19T13:08:52.470Z] CLI Version:   11.16.1
+[debug] [2022-11-19T13:08:52.470Z] Platform:      darwin
+[debug] [2022-11-19T13:08:52.470Z] Node Version:  v16.16.0
+[debug] [2022-11-19T13:08:52.471Z] Time:          Sat Nov 19 2022 14:08:52 GMT+0100 (Central European Standard Time)
+[debug] [2022-11-19T13:08:52.472Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-19T13:08:52.547Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-19T13:08:52.548Z] > authorizing via signed-in user (jakubek.weg@gmail.com)
+[debug] [2022-11-19T13:08:52.548Z] [iam] checking project dont-waste for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-19T13:08:52.550Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dont-waste:testIamPermissions [none]
+[debug] [2022-11-19T13:08:52.551Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dont-waste:testIamPermissions x-goog-quota-user=projects/dont-waste
+[debug] [2022-11-19T13:08:52.551Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dont-waste:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-19T13:08:53.529Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dont-waste:testIamPermissions 200
+[debug] [2022-11-19T13:08:53.529Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dont-waste:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-19T13:08:53.530Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dont-waste [none]
+[debug] [2022-11-19T13:08:53.956Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dont-waste 200
+[debug] [2022-11-19T13:08:53.956Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dont-waste {"projectId":"dont-waste","projectNumber":"153609106069","displayName":"dont-waste","name":"projects/dont-waste","resources":{"hostingSite":"dont-waste","storageBucket":"dont-waste.appspot.com","locationId":"europe-west2"},"state":"ACTIVE","etag":"1_67e9421a-71a9-4a63-b266-f0002d68b1fc"}
+[debug] [2022-11-19T13:08:55.900Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dont-waste/sites pageToken=&pageSize=10
+[debug] [2022-11-19T13:08:57.015Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dont-waste/sites 200
+[debug] [2022-11-19T13:08:57.015Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dont-waste/sites {"sites":[{"name":"projects/dont-waste/sites/dont-waste","defaultUrl":"https://dont-waste.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-19T13:08:57.016Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dont-waste/sites 
+[debug] [2022-11-19T13:08:58.142Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dont-waste/sites 200
+[debug] [2022-11-19T13:08:58.142Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dont-waste/sites {"sites":[{"name":"projects/dont-waste/sites/dont-waste","defaultUrl":"https://dont-waste.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-19T13:08:58.143Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dont-waste/webApps/-/config [none]
+[debug] [2022-11-19T13:08:59.062Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dont-waste/webApps/-/config 200
+[debug] [2022-11-19T13:08:59.062Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dont-waste/webApps/-/config {"projectId":"dont-waste","appId":"1:153609106069:web:db4a754010c7fb22f8219c","storageBucket":"dont-waste.appspot.com","locationId":"europe-west2","apiKey":"AIzaSyByhAul7u16FvJJwIbN_mF1h8A7BDmTrgs","authDomain":"dont-waste.firebaseapp.com","messagingSenderId":"153609106069","measurementId":"G-X89F3TPYXN"}
